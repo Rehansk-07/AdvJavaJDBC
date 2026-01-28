@@ -114,7 +114,7 @@ public class JdbcPro8
 			
 			IO.println("----------Employee Details----------");
 			IO.println("Employee Id: "+ e_id);
-			IO.println("Employee Total Sal: "+cstmt.getInt(1));
+			IO.println("Employee  Total Sal: "+cstmt.getInt(1));
 			
 		}
 		catch(Exception e)
