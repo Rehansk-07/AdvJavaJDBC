@@ -52,8 +52,8 @@ public class JdbcPro9
 			pstmt1.setString(2, "2024-10-10");
 			pstmt1.setString(3, "SLEEPER");
 			
-			int rowCount = pstmt1.executeUpdate();
-			if(rowCount==0)
+			int rCount = pstmt1.executeUpdate();
+			if(rCount==0)
 			{
 				throw new RuntimeException("Seat not available for booking");	
 			}
@@ -67,13 +67,13 @@ public class JdbcPro9
 		   pstmt2.setString(3, "C123");
 		   pstmt2.setInt(4, 1);
 		   
-		   if(rowCount==0)
+		   if(rCount==0)
 			   throw new RuntimeException("Booking record not created");
 		   else
 			   System.out.println("Booking recor created\n waiting for payment confirmation!!!!");
 		   
 		   PreparedStatement pstm3 = con.prepareStatement(sqlQuery3);
-		   pstm3.setString(rowCount, dbPwd);
+		   pstm3.setString(rCount, dbPwd);
 		   
 			
 			
