@@ -43,7 +43,7 @@ public class JdbcPro9
 		{
 			Connection con=connect();
 			System.out.println("Database connected sucessfully!!!!");
-			System.out.println("Before disabling Autocommit===>"+con.getAutoCommit());
+			System.out.println("Beforee disabling Autocommit===>"+con.getAutoCommit());
 			con.setAutoCommit(false);
 			System.out.println("After disabaling  autocommit====>"+con.getAutoCommit());
 			
