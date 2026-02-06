@@ -72,7 +72,7 @@ public class JdbcPro8
 	
 	void m2()
 	{
-		IO.println("Implementing Callaable Statement===> Procedure2");
+		IO.println("Implementing Callable Statement===> Procedure2");
 		try
 		{
 			Connection con = connect();
